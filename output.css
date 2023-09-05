@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main #desktopImage {
+  display: none;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.list span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.email-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-width: 100%;
+}
+.email-area h1 {
+  font-size: x-small;
+  align-self: self-start;
+}
+.email-area input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 5px;
+}
+.email-area input::placeholder {
+  padding: 20px;
+}
+
+button {
+  min-width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border-style: none;
+  color: hsl(0, 0%, 100%);
+  font-size: small;
+  font-weight: 700;
+  background-color: hsl(234, 29%, 20%);
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: hsl(0, 0%, 100%);
+}
+.modal section {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  max-width: 90%;
+}
+.modal section img {
+  width: 64px;
+  height: 64px;
+}
+.modal section h1 {
+  font-size: 5vh;
+  color: hsl(234, 29%, 20%);
+}
+.modal section p {
+  color: hsl(234, 29%, 20%);
+}
+.modal section button {
+  margin-top: 250px;
+}
+
+@media (min-width: 390px) {
+  main img {
+    display: none;
+  }
+}
+@media (min-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(235, 18%, 26%);
+  }
+  .modal {
+    width: 30%;
+    height: 30%;
+    top: unset;
+    left: unset;
+    bottom: 300px;
+    position: absolute;
+    height: 60%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  main {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  main #desktopImage {
+    display: block;
+    width: 40%;
+  }
+  main .main {
+    width: 40%;
+  }
+  main .main .list img {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
